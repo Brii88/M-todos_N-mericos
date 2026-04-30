@@ -1,0 +1,10 @@
+def f(x):
+    return x**2
+a, b = 0, 3
+h = (b - a) / 3
+x0 = a
+x1 = a + h
+x2 = a + 2*h
+x3 = b
+I = (3*h/8) * (f(x0) + 3*f(x1) + 3*f(x2) + f(x3))
+print("Resultado:", I)
